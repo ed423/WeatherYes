@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+:root {
+    --blue-1: #48aa6f;
+    --blue-2: #58e2b6;
+    --yellow-1: #fac233;
+    --white: #FFF;
+    --grey-1: #7e7e7e;
+    --dark-shadow: rgba(0, 0, 0, 0.3);
+    --light-shadow: rgba(61, 61, 61, 0.1);
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: 'Roboto Slab', serif;
+      font-size: 15px;
+      width: 100%;
+      height: 100vh;
+      background-color: var(--blue-1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .container {
+      width: 400px;
+      height: 80vh;
+      background-color: var(--blue-2);
+      border-radius: 15px;
+      box-shadow: 10px 10px 10px var(--dark-shadow);
+  }
+
+  .upper-box {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 50%;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+  }
+
+  .upper-box img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 150%;
+  }
+
+  .weatherdata {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background-color: var(--dark-shadow);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .location {
+      color: white;
+      text-align: center;
+      font-size: 1.2em;
+  }
+
+  .temp {
+      color: white;
+      text-align: center;
+      font-size: 4em;
+  }
+
+  .details-label {
+      color: white;
+  }
+
+  .details-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex: 1;
+      background-color: var(--light-shadow);
+      margin-top: 1em;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+  }
+
+  .block {
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+  }
+
+  .block-label {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .block-label img {
+      width: 2em;
+  }
+  
+  .block-label span {
+      color: white;
+      font-size: 0.9em;
+  }
+
+  .block-value {
+      color: white;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+  }
+
+  .lower-box {
+    position: relative;
+    overflow: hidden;
+    height: 50%;
+    width: 100%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search {
+      margin-bottom: 1.2em;
+      text-align: center;
+  }
+
+  .search input {
+      background-color: var(--light-shadow);
+      border: none;
+      outline: none;
+      border-radius: 15px;
+      padding: 1.2em;
+      color: rgb(203, 203, 203);
+      font-size: 0.9em;
+      text-align: center;
+  }
